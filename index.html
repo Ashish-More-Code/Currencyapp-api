@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>Converter App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: #FF6969;
+            
+        }
+      
+     
+        .heading {
+            text-align: center;
+            border: 5px;
+            font-family: "Sofia", sans-serif;
+            border-color: #fc3333;
+            border-style: solid;
+            color: #ffffff;
+            background-color: transparent;
+            box-shadow: 0 0 40px #ff1616;
+
+        }
+        .converter{
+          margin-top: 150px;
+        }
+        label{
+            color: #ffffff;
+            font-weight: bold;
+        }
+        table{
+            box-shadow: 0 0 40px #ff1616;
+        }
+        #convert{
+            border: 1px;
+            height: 50px;
+            width: 150px;
+            margin: -10px;
+            border-radius: 5px;
+            border-style: solid;
+            font-weight: bold;
+            border-color: #fc3333;
+            color: #ffffff;
+            background-color: #fc3333;
+        }
+        #from,#to{
+            border: 1px;
+            border-style: solid;
+            font-weight: bolder;
+            color: #ffffff;
+            background-color:  #ff4848;
+            display:inline-block;
+            border-color: #343434;
+            width: 100%; 
+            height: 100%;
+            margin: -10;
+
+        }
+        th,td{
+            padding: 0%;
+            background-color: #ff4848;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="converter">
+        <form>
+            <table border="1" cellpadding="10px" align="center" cellspacing="30px">
+                <tr>
+                    <th>
+                        <label id="label" for="from">From</label>
+                    </th>
+                    <th>
+
+                        <select id="from">
+                            <option>USD</option>
+                            <option>INR</option>
+                            <option>AED</option>
+                            <option>EUR</option>
+                        </select>
+                    </th>
+                    <th>
+                        <label id="label" for="to">To</label>
+                    </th>
+                    <th>
+                        <select id="to">
+                            <option>USD</option>
+                            <option>INR</option>
+                            <option>AED</option>
+                            <option>EUR</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="amount">Amount to be converted:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="amount" />
+                    </td>
+                    <td colspan="2">
+                        <button type="button" id="convert" onclick="working()"><h4>Convert</h4></button>
+
+                    </td>
+                </tr>
+        </form>
+        <th colspan="4">
+            <p id="result"></p>
+        </th>
+        <script src="test.js"></script>
+        </table>
+    </div>
+</body>
+
+</html>
